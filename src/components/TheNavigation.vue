@@ -27,11 +27,7 @@
 </template>
 
 <script>
-import SVGIcon from "./SVG/icons.vue";
 export default {
-  components: {
-    SVGIcon,
-  },
   data() {
     return {
       mobile: null,
@@ -67,14 +63,14 @@ $linkHover: #1eb8b8;
 
 header {
   background-color: #fff;
-  padding: 0 25px;
+  padding: 0 1.563rem;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
     0 2px 4px -1px rgba(0, 0, 0, 0.6);
   z-index: 99;
 
   .link {
     font-weight: 500;
-    padding: 0 8px;
+    padding: 0 0.5rem;
     transition: 0.3s color ease;
 
     &:hover {
@@ -83,7 +79,7 @@ header {
   }
   nav {
     display: flex;
-    padding: 25px 0;
+    padding: 1.563rem 0;
 
     .branding {
       display: flex;
@@ -91,7 +87,7 @@ header {
 
       .header {
         font-weight: 600;
-        font-size: 24px;
+        font-size: 1.5rem;
         color: #000;
         text-decoration: none;
       }
@@ -104,10 +100,10 @@ header {
       justify-content: flex-end;
 
       ul {
-        margin-right: 32px;
+        margin-right: 2rem;
 
         .link {
-          margin-right: 32px;
+          margin-right: 2rem;
         }
         .link:last-child {
           margin-right: 0;
@@ -118,15 +114,15 @@ header {
   .menu-icon {
     cursor: pointer;
     position: absolute;
-    top: 32px;
-    right: 25px;
-    height: 25px;
+    top: 2rem;
+    right: 1.563rem;
+    height: 1.563rem;
     width: auto;
   }
   .mobile-nav {
-    padding: 20px;
+    padding: 1.25rem;
     width: 70%;
-    max-width: 250px;
+    max-width: 15.625rem;
     display: flex;
     flex-direction: column;
     position: fixed;
@@ -136,7 +132,7 @@ header {
     left: 0;
 
     .link {
-      padding: 15px 0;
+      padding: 0.938rem 0;
       color: #fff;
 
       &:hover {
@@ -149,13 +145,13 @@ header {
     transition: all 1s ease;
   }
   .mobile-nav-enter {
-    transform: translateX(-250px);
+    transform: translateX(-15.625rem);
   }
   .mobile-nav-enter-to {
     transform: translateX(0);
   }
   .mobile-nav-leave-to {
-    transform: translateX(-250px);
+    transform: translateX(-15.625rem);
   }
 }
 </style>

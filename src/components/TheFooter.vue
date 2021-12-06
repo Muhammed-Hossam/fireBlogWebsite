@@ -48,11 +48,7 @@
 </template>
 
 <script>
-import SVGIcon from "./SVG/icons.vue";
 export default {
-  components: {
-    SVGIcon,
-  },
   data() {
     return {
       user: false,
@@ -65,13 +61,13 @@ export default {
 <style lang="scss" scoped>
 footer {
   margin-top: auto;
-  padding: 100px 25px;
+  padding: 6.25rem 1.563rem;
   background-color: #303030;
   .container {
     display: flex;
     flex-direction: column;
-    gap: 32px;
-    @media (min-width: 800px) {
+    gap: 2rem;
+    @media (min-width: 50rem) {
       flex-direction: row;
       gap: 0px;
     }
@@ -80,38 +76,38 @@ footer {
       flex: 1;
     }
     .left {
-      gap: 32px;
+      gap: 2rem;
       color: #fff;
       display: flex;
       flex-direction: column;
       align-items: center;
-      @media (min-width: 800px) {
+      @media (min-width: 50rem) {
         flex-direction: row;
         align-items: initial;
         gap: 0;
       }
       .header {
         text-align: center;
-        font-size: 24px;
+        font-size: 1.5rem;
         color: #fff;
-        margin-bottom: 16px;
+        margin-bottom: 1rem;
         text-decoration: none;
         font-weight: 600;
-        @media (min-width: 800px) {
+        @media (min-width: 50rem) {
           text-align: initial;
         }
       }
       ul {
-        gap: 16px;
+        gap: 1rem;
         list-style: none;
         display: flex;
       }
       .col-1,
       .col-2 {
-        gap: 32px;
+        gap: 2rem;
         display: flex;
         flex: 1;
-        @media (min-width: 800px) {
+        @media (min-width: 50rem) {
           gap: 0;
         }
       }
@@ -119,7 +115,7 @@ footer {
         flex-direction: column;
         h2 {
           text-align: center;
-          @media (min-width: 800px) {
+          @media (min-width: 50rem) {
             text-align: initial;
           }
         }
@@ -129,7 +125,7 @@ footer {
             display: flex;
             align-items: center;
             .svg-icon {
-              width: 24px;
+              width: 1.5rem;
               height: auto;
               color: #fff;
             }
@@ -142,11 +138,11 @@ footer {
           justify-content: center;
           flex-direction: row;
           flex-wrap: wrap;
-          @media (min-width: 800px) {
+          @media (min-width: 50rem) {
             flex-direction: column;
           }
           .link {
-            font-size: 16px;
+            font-size: 1rem;
             font-weight: 500;
             color: #fff;
             text-decoration: none;
@@ -155,11 +151,11 @@ footer {
       }
     }
     .right {
-      gap: 32px;
+      gap: 2rem;
       color: #fff;
       align-items: center;
       flex-direction: column;
-      @media (min-width: 800px) {
+      @media (min-width: 50rem) {
         align-items: flex-end;
         gap: 0;
       }
